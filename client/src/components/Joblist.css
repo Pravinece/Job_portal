@@ -1,0 +1,172 @@
+.job-search-container {
+  align-items: center;
+  margin-top: 20px;
+  text-align: center;
+  padding: 0 10px;
+  
+}
+
+.search-g-img {
+  position: relative;
+  width: 100%;
+  padding-left: 4%;
+  max-width: 1400px;
+}
+
+
+.search-bar {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.search-bar label {
+  margin-right: 10px;
+}
+
+.search-bar input {
+  padding: 5px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.search-bar button {
+  padding: 5px 10px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.search-bar button:hover {
+  background-color: #0056b3;
+}
+
+.job-results {
+  margin-top: 20px;
+}
+
+.joblistbox {
+  border: 1px solid #ccc;
+  padding: 5px;
+  margin: 10px;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.list {
+  max-width: 400px;
+  display: grid;
+  grid-template-rows: auto auto auto;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .search-bar {
+    bottom: 10px;
+    padding: 5px 10px;
+    font-size: 14px;
+  }
+
+  .search-bar label {
+    margin-right: 5px;
+  }
+
+  .search-bar input {
+    padding: 3px;
+    margin-right: 5px;
+  }
+
+  .search-bar button {
+    padding: 3px 5px;
+  }
+
+  .search-g-img img {
+    height: auto;
+    width: 100%;
+  }
+
+  .list {
+    max-width: 100%;
+    grid-template-rows: auto;
+  }
+}
+
+.joblist-intro {
+  display: flex;
+  align-items: center;
+  margin: 20px 0 0 40px;
+  padding: 10px 0 0 30px;
+  width: 100%;
+  max-width: 1300px;
+  flex-wrap: wrap; /* Ensure the content wraps on smaller screens */
+}
+
+.joblist-intro img {
+  margin-right: 20px;
+  flex-shrink: 0;
+  padding: 5px 20px;
+  max-width: 100%; /* Ensure the image scales down */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.joblist-intro p {
+  flex: 1;
+  padding: 5px 20px;
+  max-width: 100%; /* Ensure the paragraph scales down */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .joblist-intro {
+    flex-direction: column; /* Stack image and text vertically */
+    align-items: center;
+    margin: 20px auto;
+    padding: 10px;
+  }
+
+  .joblist-intro img {
+    margin: 0 0 10px 0; /* Remove right margin and add bottom margin */
+  }
+
+  .joblist-intro p {
+    text-align: center;
+    padding: 2px;
+  }
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px auto;
+  max-width: 100%;
+}
+
+.joblistbox {
+  border: 1px solid #ccc;
+  padding: 5px;
+  margin: 10px;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  text-align: center;
+  width: 100%;
+  max-width: 500px; 
+}
+
+
+.searchbtn{
+  border: 2px solid #007BFF;
+  border-spacing: 2px;
+  padding: 2px;
+  border-radius: 5px;
+ 
+}
